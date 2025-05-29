@@ -4,6 +4,8 @@ void dividir(int val1, int val2);
 
 int main () {
 	int a, b, mayor, menor;
+	cout << "=== DIVISION ENTERA CON RESTO ===" << endl;
+    cout << "Este programa calcula el cociente y el resto de una division entre dos numeros" << endl << endl;
 	cout<<"Ingrese el primer numero: ";
 	cin>>a;
 	cout<<"Ingrese el segundo numero: ";
@@ -17,6 +19,7 @@ int main () {
 		menor=a;
 	}
 	dividir(mayor, menor);
+	cout<<endl<<endl<<"Gracias por usar este programa";
 	return 0;
 }
 
