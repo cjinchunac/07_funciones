@@ -33,5 +33,17 @@ int generador(int cantidad) {
         cout<<c<<" ";
         suma=suma+c;
     }
-    cout<<endl<<endl<<"La suma de los "<<cantidad<<" terminos es: "<<suma;
+    
+    cout<<"\n\n¿Desea mostrar la suma de los terminos? (s/n): ";
+    cin>>opcion;
+    switch (opcion) {
+    	case 's':
+    		cout<<"La suma de los "<<cantidad<<" terminos es: "<<suma;
+    		break;
+    	case 'n':
+    		cout<<"Gracias por usar el programa, tenga buen dia";
+    		break;
+    	default:
+    		cout<<"No ingreso algo correcto, adios";
+	}
 }
