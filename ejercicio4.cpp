@@ -9,7 +9,10 @@ int main () {
 	cin>>m;
 	cout<<"Escriba n: ";
 	cin>>n;
-	combinatoria (m,n);
+	if (m>=n&&m>=0&&n>=0)
+		combinatoria (m,n);
+	else
+		cout<<endl<<"No ingreso datos validos";
 	return 0;
 }
 
