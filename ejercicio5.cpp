@@ -5,11 +5,15 @@ int main () {
 	int n, v;
 	cout<<"CONSULTE SI SU NUMERO ES PERFECTO: ";
 	cin>>n;
-	v=verificar(n);
-	if (v==1)
-		cout<<"EL NUMERO ES PERFECTO";
+	if (n>0) {
+		v=verificar(n);
+		if (v==1)
+			cout<<"EL NUMERO ES PERFECTO";
+		else
+			cout<<"EL NUMERO NO ES PERFECTO";
+	}
 	else
-		cout<<"EL NUMERO NO ES PERFECTO";
+		cout<<"NO INGRESO UN VALOR VALIDO";
 	return 0;
 }
 
