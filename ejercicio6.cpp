@@ -8,10 +8,14 @@ int main () {
 	cin>>n;
 	cout<<endl;
 	v=vprimo(n);
-	if (v==1)
-		cout<<"El numero es primo";
+	if (n>0) {
+		if (v==1)
+			cout<<"El numero es primo";
+		else
+			cout<<"El numero NO es primo";
+	}
 	else
-		cout<<"El numero NO es primo";
+		cout<<"Ha ingresado un valor erroneo (numero negativo o caracteres)";
 	return 0;
 }
 
